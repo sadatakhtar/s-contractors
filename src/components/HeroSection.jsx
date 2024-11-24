@@ -10,6 +10,7 @@ import {
   DialogContentText,
   DialogActions,
 } from "@mui/material";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const HeroSection = () => {
   const [open, setOpen] = useState(false);
@@ -32,6 +33,13 @@ const HeroSection = () => {
     window.location.href = "https://wa.me/447301065151";
     handleClose();
   }
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '447301065151'; // Replace with your phone number
+    const message = 'Hello, I would like to inquire about your services!'; // Optional predefined message
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank'); // Open link in a new tab
+  };
   return (
     <Box
       sx={{
@@ -62,6 +70,20 @@ const HeroSection = () => {
         >
           Get a Free Quote
         </Button>
+        <Button
+      variant="contained"
+      color="success"
+      startIcon={<WhatsAppIcon />}
+      onClick={handleWhatsAppClick}
+      sx={{
+        position: 'fixed', // Optional to make it float
+        bottom: 16, // Adjust positioning
+        right: 16,
+      }}
+    >
+      Chat on WhatsApp
+    </Button>
+
 
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle>Contact Us</DialogTitle>
