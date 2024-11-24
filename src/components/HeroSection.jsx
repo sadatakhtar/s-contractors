@@ -27,6 +27,11 @@ const HeroSection = () => {
       "mailto:example@example.com?subject=Free%20Quote%20Request";
     handleClose();
   };
+
+  const handleWhatsApp = () => {
+    window.location.href = "https://wa.me/15551234567";
+    handleClose();
+  }
   return (
     <Box
       sx={{
@@ -71,6 +76,9 @@ const HeroSection = () => {
             </Button>
             <Button onClick={handleEmail} color="primary">
               Email
+            </Button>
+            <Button onClick={handleWhatsApp} color="primary">
+              whatsapp
             </Button>
           </DialogActions>
         </Dialog>
