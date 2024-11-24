@@ -58,10 +58,22 @@ const HeroSection = () => {
     >
       <Container>
         <Typography variant="h2" gutterBottom>
-          Building Your Vision
+        Welcome to Sid Contractors 
         </Typography>
         <Typography variant="h5" gutterBottom>
-          Transforming Spaces Inside and Out
+          At Sid Contractors, we specialize in turning houses into homes and
+          visions into reality. Serving the heart of the West Midlands, we pride
+          ourselves on delivering top-notch craftsmanship that combines
+          exceptional quality with affordable pricing. Whether you're planning a
+          stunning home renovation, adding an elegant extension, or refreshing
+          your space with professional painting and decorating, our experienced
+          team is here to help. We believe in providing personalized service,
+          meticulous attention to detail, and results that exceed
+          expectations—all while staying within your budget. From the first
+          brick to the final brushstroke, we’re committed to creating beautiful,
+          lasting spaces you’ll love. Let’s build your dream together. Get in
+          touch today to discover quality you can trust at a price you can
+          afford.
         </Typography>
         <Button
           variant="contained"
