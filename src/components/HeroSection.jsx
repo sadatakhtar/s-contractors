@@ -29,7 +29,7 @@ const HeroSection = () => {
   };
 
   const handleWhatsApp = () => {
-    window.location.href = "https://wa.me/15551234567";
+    window.location.href = "https://wa.me/447301065151";
     handleClose();
   }
   return (
